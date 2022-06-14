@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/madang">
+
+    <TextView
+        android:id="@+id/thankyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/lovelo_black"
+        android:outlineAmbientShadowColor="@color/black"
+        android:text="Thank You"
+        android:textAlignment="center"
+        android:textSize="50dp"></TextView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thankyou"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="20dp"
+        android:text="back"
+        android:textSize="15dp" />
+
+</RelativeLayout>

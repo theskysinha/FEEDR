@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/madang"
+    tools:context=".Donator">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/food" />
+
+    <EditText
+
+        android:id="@+id/food"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/lovelo"
+        android:hint="Food"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/details"
+        android:text="Food Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/lovelo_black"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:id="@+id/amount"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food"
+        android:layout_marginLeft="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/lovelo"
+        android:hint="Amount"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/lovelo"
+        android:text="Is the food half-eaten?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/noBtn"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/white"
+        android:text="GO BACK"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/yesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-90dp"
+        android:text="Yes" />
+
+    <Button
+        android:id="@+id/noBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yesBtn"
+        android:layout_marginLeft="100dp"
+        android:text="No" />
+</RelativeLayout>
